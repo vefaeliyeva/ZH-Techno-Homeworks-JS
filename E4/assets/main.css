@@ -159,4 +159,46 @@ header nav ul .mainListElement {
 #HOME .homeSection .homeLeft .homeLeftShop .homeLeftShopAddingText {
   font-size: 12px;
   font-weight: 500;
+}
+
+#FEATURES {
+  padding: 100px 130px;
+}
+#FEATURES .featuresSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+  justify-content: space-evenly !important;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+#FEATURES .featuresSection .featuresSingle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 0px;
+  position: relative;
+}
+#FEATURES .featuresSection .featuresSingle::after {
+  content: "";
+  height: 60%;
+  width: 1px;
+  background-color: rgba(0, 0, 0, 0.201);
+  position: absolute;
+  right: -50px;
+}
+#FEATURES .featuresSection .featuresSingle:last-child::after {
+  display: none;
+}
+#FEATURES .featuresSection .featuresSingle .featuresImage {
+  margin-bottom: 20px;
+}
+#FEATURES .featuresSection .featuresSingle .featuresTitle {
+  font-size: 16px;
+  color: #222222;
+}
+#FEATURES .featuresSection .featuresSingle .featuresText {
+  color: #777777;
 }/*# sourceMappingURL=main.css.map */

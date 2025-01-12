@@ -1,0 +1,35 @@
+#FEATURES {
+  padding: 100px 130px;
+  .featuresSection {
+    @include flexBox();
+    justify-content: space-evenly !important;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    position: relative;
+    .featuresSingle {
+      @include flexBoxColumn();
+      padding: 30px 0px;
+      position: relative;
+      &::after {
+        content: "";
+        height: 60%;
+        width: 1px;
+        background-color: rgba(0, 0, 0, 0.201);
+        position: absolute;
+        right: -50px;
+      }
+      &:last-child::after {
+        display: none;
+      }
+      .featuresImage {
+        margin-bottom: 20px;
+      }
+      .featuresTitle {
+        font-size: 16px;
+        color: $secondary-color;
+      }
+      .featuresText {
+        color: $text-color;
+      }
+    }
+  }
+}
