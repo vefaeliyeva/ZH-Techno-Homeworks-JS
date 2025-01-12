@@ -10,3 +10,10 @@
     flex-direction: column;
     align-items: center;
 }
+@mixin background-image {
+    background-image: url(#{$image-path});
+    background-size: $size;
+    background-position: $position;
+    background-repeat: no-repeat;
+  }
+  
