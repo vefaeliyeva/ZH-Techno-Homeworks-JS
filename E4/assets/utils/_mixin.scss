@@ -11,9 +11,8 @@
     align-items: center;
 }
 @mixin background-image {
-    background-image: url(#{$image-path});
-    background-size: $size;
-    background-position: $position;
+    background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
   }
   

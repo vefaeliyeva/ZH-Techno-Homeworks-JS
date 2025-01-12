@@ -20,7 +20,6 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
   display: block;
@@ -57,4 +56,9 @@ a {
   padding: 0px 130px;
 }
 
-@im @import "./utils/mixin";/*# sourceMappingURL=main.css.map */
+body {
+  font-family: "Poppins", serif;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #222222;
+}/*# sourceMappingURL=main.css.map */
