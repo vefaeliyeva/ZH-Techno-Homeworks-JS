@@ -162,7 +162,7 @@ header nav ul .mainListElement {
 }
 
 #FEATURES {
-  padding: 100px 130px;
+  padding: 100px 0px;
 }
 #FEATURES .featuresSection {
   display: flex;
@@ -201,4 +201,8 @@ header nav ul .mainListElement {
 }
 #FEATURES .featuresSection .featuresSingle .featuresText {
   color: #777777;
+}
+
+#CATEGORY .categorySection {
+  display: grid;
 }/*# sourceMappingURL=main.css.map */
