@@ -1,0 +1,35 @@
+#HERO{
+
+    padding: 170px 150px;
+    background-image: url(https://cdn.jevelin.shufflehound.com/wp-content/uploads/sites/13/2017/03/Slide.jpg);
+    background-size: cover;      
+    background-attachment: fixed;
+    background-position: center;   
+    background-repeat: no-repeat;  
+    .container{
+        row-gap: 40px;
+        h1{
+            font-size: 40px;
+            font-weight: 200;
+            line-height: 1.2;
+            color: rgb(80, 80, 80);
+            span{
+                font-weight: 700;
+            }
+        }
+        p{
+            font-size: 24px;
+            font-weight: 200;
+            color: rgb(141, 141, 141);
+        }
+        button{
+            font-size: 14px;
+            font-weight: 700;
+            color: white;
+            background-color: rgba(71, 201, 229, 1);
+            padding: 20px 40px;
+            border: none;
+            border-radius: 35px;
+        }
+    }
+}

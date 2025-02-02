@@ -1,1 +1,170 @@
-/*# sourceMappingURL=main.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playwrite+AU+SA:wght@100..400&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Raleway", serif;
+}
+
+#HEADER {
+  background-color: white;
+}
+#HEADER .container {
+  padding: 40px 0px;
+  z-index: 700;
+}
+#HEADER .container nav ul {
+  -moz-column-gap: 26px;
+       column-gap: 26px;
+}
+#HEADER .container nav ul li a {
+  font-size: 14px;
+  font-weight: 700;
+  color: rgba(61, 61, 61, 0.8705882353);
+}
+#HEADER .container nav ul li a i {
+  font-size: 26px;
+}
+
+#HERO {
+  padding: 170px 150px;
+  background-image: url(https://cdn.jevelin.shufflehound.com/wp-content/uploads/sites/13/2017/03/Slide.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#HERO .container {
+  row-gap: 40px;
+}
+#HERO .container h1 {
+  font-size: 40px;
+  font-weight: 200;
+  line-height: 1.2;
+  color: rgb(80, 80, 80);
+}
+#HERO .container h1 span {
+  font-weight: 700;
+}
+#HERO .container p {
+  font-size: 24px;
+  font-weight: 200;
+  color: rgb(141, 141, 141);
+}
+#HERO .container button {
+  font-size: 14px;
+  font-weight: 700;
+  color: white;
+  background-color: rgb(71, 201, 229);
+  padding: 20px 40px;
+  border: none;
+  border-radius: 35px;
+}
+
+#SERVICES {
+  padding: 120px 0;
+  background-image: url(https://cdn.jevelin.shufflehound.com/wp-content/uploads/sites/13/2017/03/Service_image.jpg);
+}
+#SERVICES .container {
+  row-gap: 50px;
+}
+#SERVICES .container .servicesSectionTop {
+  row-gap: 20px;
+  color: white;
+}
+#SERVICES .container .servicesSectionTop h2 {
+  font-size: 15px;
+}
+#SERVICES .container .servicesSectionTop h1 {
+  text-align: center;
+  font-size: 24px;
+  line-height: 1.4;
+}
+#SERVICES .container .servicesSectionTop h1 span {
+  font-weight: 700;
+}
+#SERVICES .container .servicesSectionBottom {
+  -moz-column-gap: 0px;
+       column-gap: 0px;
+}
+#SERVICES .container .servicesSectionBottom .servicesCard {
+  row-gap: 20px;
+}
+#SERVICES .container .servicesSectionBottom .servicesCard a i {
+  font-size: 48px;
+  color: rgb(70, 168, 168);
+}
+#SERVICES .container .servicesSectionBottom .servicesCard h3 {
+  font-size: 20px;
+  color: white;
+}
+#SERVICES .container .servicesSectionBottom .servicesCard p {
+  text-align: center;
+  font-size: 14px;
+  color: white;
+  line-height: 1.8;
+}
+#SERVICES .container .servicesSectionBottom .servicesCard button {
+  background-color: transparent;
+  color: white;
+  font-weight: 400;
+  font-size: 14px;
+  border: 2px solid rgb(53, 56, 57);
+  padding: 14px 31px;
+  border-radius: 35px;
+  transition: all 1s;
+}
+#SERVICES .container .servicesSectionBottom .servicesCard button:hover {
+  letter-spacing: 2px;
+  border: 2px solid white;
+}/*# sourceMappingURL=main.css.map */

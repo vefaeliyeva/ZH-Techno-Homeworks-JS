@@ -1,0 +1,22 @@
+#HEADER{
+    background-color: white;
+    .container{
+        padding: 40px 0px;
+        z-index: 700;
+        nav{
+            ul{
+                column-gap: 26px;
+                li{
+                    a{
+                        font-size: 14px;
+                        font-weight: 700;
+                        color: #3d3d3dde;
+                        i{
+                            font-size: 26px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
