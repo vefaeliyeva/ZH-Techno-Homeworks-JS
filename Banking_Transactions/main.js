@@ -5,7 +5,7 @@ let pinCode = Number(prompt(`Parolu daxil edin: `))
 if (pinCode === password ) {
     let your_transactions = prompt(`Kartdan vəsait nağdlaşdırmaq üçün "-" , Karta vəsait əlavə etmək üçün "+" düymələrindən birini klikləyin`)
     if (your_transactions === "-") {
-        let amount = prompt(`Nağdlaşdırmaq istədiyiniz vəsaiti daxil edin`)
+        let amount = Number(prompt(`Nağdlaşdırmaq istədiyiniz vəsaiti daxil edin`))
         if (amount <= deposit & amount > 0) {
             let afterTransactionsYourDeposit = deposit - amount;
             console.log("Bank əməliyyatından öncə balans: ", deposit);
