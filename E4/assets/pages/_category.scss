@@ -7,8 +7,16 @@
             height: max-content;
             .categoryLeftTop{
                 @include flexBox();
+                a{
+                    color: white;
+                    display: none;
+                }
                 img{
                     height: 190px;
+                    margin-bottom: 30px;;
+                    &:hover{
+                        cursor: pointer;
+                    }
                 }                
             }
                 .categoryLeftTopFirstImage{
@@ -49,3 +57,4 @@
             img{height: 420px}
         }
     }
+

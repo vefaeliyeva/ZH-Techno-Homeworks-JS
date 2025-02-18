@@ -225,8 +225,16 @@ header nav ul .mainListElement {
   -moz-column-gap: 20px;
        column-gap: 20px;
 }
+#CATEGORY .categorySection .categoryLeft .categoryLeftTop a {
+  color: white;
+  display: none;
+}
 #CATEGORY .categorySection .categoryLeft .categoryLeftTop img {
   height: 190px;
+  margin-bottom: 30px;
+}
+#CATEGORY .categorySection .categoryLeft .categoryLeftTop img:hover {
+  cursor: pointer;
 }
 #CATEGORY .categorySection .categoryLeft .categoryLeftTopFirstImage {
   padding: 0px 10px;

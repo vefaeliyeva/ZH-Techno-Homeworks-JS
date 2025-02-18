@@ -1,4 +1,3 @@
-
 let letters = function(str){
     let newPhrase ="";
     for (let i = 0; i < str.length; i++) {         
