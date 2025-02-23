@@ -10,8 +10,3 @@ let newNumbers = function (numbers, startIndex, endIndex) {
 }
 
 console.log(newNumbers(numbers, 2, numbers.length-2));
-
-
-
-
-
