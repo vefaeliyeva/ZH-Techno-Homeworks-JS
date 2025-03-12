@@ -1,0 +1,25 @@
+.topSide{
+    display: inline-block;
+    padding: 30px;
+    border-radius: 35px;
+    background-color: rgba(0, 0, 255, 0.239);
+}
+
+form{
+    display: flex;
+    column-gap: 30px;
+}
+input{
+    padding: 5px 15px;
+    border-radius: 25px;
+    border: none;
+}
+.addBtn{
+    background-color: bisque;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 35px;
+}
+.addBtn:hover{
+    cursor: pointer;
+}
