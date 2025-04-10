@@ -1,0 +1,121 @@
+.card {
+  width: 100%;
+  max-width: 320px;
+  border-radius: 20px;
+  overflow: hidden;
+  border: #5882ab solid 1px;
+}
+.cardContainer {
+  display: flex;
+  gap: 60px;
+}
+.cardTop img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.cardBottom {
+  padding: 16px;
+  border-top: 1px solid #eee;
+}
+
+.itemName {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #222;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.itemDetails {
+  font-size: 1rem;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.priceDiv {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 10px;
+}
+
+button {
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 16px;
+  font-size: 1rem;
+  background-color: #5882ab;
+  cursor: pointer;
+}
+
+.price {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+  color: #5882ab;
+  padding: 10px 16px;
+  border-radius: 10px;
+  border: #5882ab solid 1px;
+}
+.container {
+  padding: 50px 150px;
+  display: flex;
+  justify-content: space-between;
+  column-gap: 50px;
+}
+.fa-solid {
+  font-size: 40px;
+}
+#menuDiv {
+    width: 430px;
+  height: 500px;
+  border-radius: 25px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  display: flex;
+  flex-direction: column;
+  padding: 15px 20px;
+  row-gap: 20px;
+  overflow: hidden;
+  background-color: bisque;
+}
+#menuElement{
+  display: flex;
+  justify-content: space-between;
+  gap: 25px;
+}
+#elementLine{
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  width: 100%;
+}
+#itemName,
+#itemPrice,
+#remove {
+  background-color: #5882abb1;
+  padding: 10px;
+  color: white;
+  align-self: self-start;
+  border-radius: 10px;
+  font-size: 20px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+}
+#itemName{
+  width: 150px;
+}
+#itemPrice{
+  width: 70px;
+}
+#remove{
+  background-color: red;
+  border-radius: 50%;
+}
+#burger {
+  cursor: pointer;
+  align-self: self-start;
+}

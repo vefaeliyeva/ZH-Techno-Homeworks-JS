@@ -1,0 +1,28 @@
+#clickBtn {
+    background-color: #4CAF50; /* Yaşıl rəng */
+    color: white;
+    padding: 12px 24px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+#clickBtn:hover {
+    background-color: #45a049; /* Daha tünd yaşıl */
+    transform: scale(1.05);
+}
+
+#clickBtn:active {
+    background-color: #3e8e41;
+    transform: scale(0.95);
+}
+#myText {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #333; 
+    text-align: justify;
+    margin-bottom: 16px;
+    font-family: "Arial", sans-serif;
+}
