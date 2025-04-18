@@ -2,48 +2,45 @@ const basketBtn = document.getElementById("basket-btn");
 const menuDiv = document.getElementById("menuDiv");
 const totalAmountEl = document.getElementById("totalAmount");
 
-const addButton1 = document.getElementById("addButton1");
-const addButton2 = document.getElementById("addButton2");
-const addButton3 = document.getElementById("addButton3");
-const addButton4 = document.getElementById("addButton4");
-const addButton5 = document.getElementById("addButton5");
-const addButton6 = document.getElementById("addButton6");
-
 let totalAmount = 0;
 
+// Toggle basket görünürlüğü
 basketBtn.addEventListener("click", () => {
   menuDiv.style.visibility = menuDiv.style.visibility === "visible" ? "hidden" : "visible";
 });
 
+// Ümumi məhsul əlavəetmə funksiyası  
 function addItem(name, price) {
   const numericPrice = parseInt(price.replace("$", ""));
   totalAmount += numericPrice;
   totalAmountEl.textContent = totalAmount;
 
-  menuDiv.innerHTML += `
-    <div class="menuElement">
-      <div class="elementLine">
-        <div class="itemName">${name}</div>
-        <div class="itemPrice">${price}</div>    
-      </div>
-      <button class="removeBtn" data-price="${numericPrice}">Delete</button>
+  // Yeni elementin HTML-i
+  const itemElement = document.createElement("div");
+  itemElement.classList.add("menuElement");
+  itemElement.innerHTML = `
+    <div class="elementLine">
+      <div class="itemName">${name}</div>
+      <div class="itemPrice">${price}</div>    
     </div>
+    <button class="removeBtn" data-price="${numericPrice}">Delete</button>
   `;
+
+  // Sil düyməsinin funksiyası
+  const removeBtn = itemElement.querySelector(".removeBtn");
+  removeBtn.addEventListener("click", () => {
+    totalAmount -= numericPrice;
+    totalAmountEl.textContent = totalAmount;
+    itemElement.remove();
+  });
+
+  menuDiv.appendChild(itemElement);
 }
 
-addButton1.addEventListener("click", () => addItem("Front-End Development", "$500"));
-addButton2.addEventListener("click", () => addItem("Back-End Development", "$200"));
-addButton3.addEventListener("click", () => addItem("Full-Stack Development", "$1000"));
-addButton4.addEventListener("click", () => addItem("CyberSecurity", "$800"));
-addButton5.addEventListener("click", () => addItem("Data Analytics", "$700"));
-addButton6.addEventListener("click", () => addItem("Help-Desk", "$330"));
-
-menuDiv.addEventListener("click", function (e) {
-  if (e.target.classList.contains("removeBtn")) {
-    const priceToRemove = parseInt(e.target.getAttribute("data-price"));
-    totalAmount -= priceToRemove;
-    totalAmountEl.textContent = totalAmount;
-
-    e.target.closest(".menuElement").remove();
-  }
-});
+// Buttonlara event listener əlavə edirik
+document.getElementById("addButton1").addEventListener("click", () => addItem("Front-End Development", "$500"));
+document.getElementById("addButton2").addEventListener("click", () => addItem("Back-End Development", "$600"));
+document.getElementById("addButton3").addEventListener("click", () => addItem("Full-Stack Development", "$1000"));
+document.getElementById("addButton4").addEventListener("click", () => addItem("CyberSecurity", "$800"));
+document.getElementById("addButton5").addEventListener("click", () => addItem("Data Analytics", "$700"));
+document.getElementById("addButton6").addEventListener("click", () => addItem("Help-Desk", "$330"));
